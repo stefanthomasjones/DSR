@@ -1,0 +1,260 @@
+main{
+    background-color: white;
+    width: 100%;
+    border: white solid 2px;
+  
+}
+
+.aboutPage{
+    display: flex;
+    align-items: center;
+    column-gap: 3em;
+     padding: 0 1.5em 1em 1.5em;
+}
+
+.aboutText{
+    width: 60%;
+    padding-top:2em ;
+}
+.aboutText h1{
+color: var(--nav-blue);
+margin-bottom: .4em;
+font-size: 2.5em;
+font-weight: 800;
+}
+.aboutText h2{
+    color: var(--light-blue);
+    margin-top: 0;
+    margin-bottom: 0;
+   
+    }
+    .aboutText p{
+        color: var(--nav-blue);
+        font-size: 1.3em;
+        margin-top: .6em;
+        }
+.aboutMap{
+    padding: 2em;
+display: flex;
+align-items: center;
+}
+
+.aboutPage a{
+margin-top: 0;
+color: var(--nav-blue);
+font-size: 1.3em;
+
+}
+
+
+/*form */ 
+input:focus {
+    outline: 2px solid royalblue;
+    box-shadow: 1px 1px 8px 1px royalblue;
+  }
+ .formSize{
+    width: 101%;
+    margin-left: -2px;
+    
+ }
+ textarea {
+  font-family: inherit;
+  font-size: 100%;
+  width:100%;
+  height: 90px;
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
+  margin:0 auto;
+  border: 3px solid var(--light-blue);
+ }
+ 
+ form{
+    
+    margin: 0 auto ;
+    color: white;
+   padding: 10px 18px;
+    padding-bottom: 1em;
+    
+    background-color:  var(--offset-blue);
+    
+ }
+ .personalInfo input{
+    border: 3px solid var(--light-blue);
+    min-height: 40px;
+    margin-left: 10px;
+    padding-left: 10px;
+    width: 100%;
+    margin-top: 10px;
+ 
+ }
+ .personalInfo label{
+    margin-left: 12px;
+    font-size: .8em;
+    
+   
+ }
+ .personalInfo{
+    font-size: 1.7em;
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    grid-auto-flow: column;
+ }
+ fieldset{
+    border: 3px solid var(--light-blue);
+    padding: 1em;
+    margin-left: 10px;
+    margin-bottom: 2em;
+   
+ }
+ .fieldInput{
+    display: inline;
+    font-size: 1.3em;
+    margin-right: 1.2em;
+ }
+ legend{
+  font-size: 1.8em;
+ }
+ 
+ textarea{
+    display: block;
+ }
+ .formBottom{
+       margin-left: 12px;
+ }
+ .formBottom label{
+    display: block;
+    font-size: 1em;
+    margin-bottom: 8px;
+ }
+ .inputs{
+ padding: 10px;
+ } 
+ .formSubmitBtn{
+    border: none;
+    background-color: var(--light-blue);
+    padding: 12px 12px;
+    border-radius: 3px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+ }
+ .consent{
+    display: flex;
+ }
+ .consent p {
+  margin-left: 8px;
+ 
+ }
+ .btnflex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+ 
+.GalleryLink{
+    width: 100%;
+padding: 2em;
+}
+
+.GalleryLinkFlex{
+display: flex;
+width: 75%;
+padding: 1.5em;
+margin:0 auto ;
+background-color: var(--light-blue);
+justify-content: center;
+align-items: center;
+column-gap: 2em;
+border-radius: 3px;
+
+}
+.GalleryLinkFlex p{
+    color: white;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+.GalleryLinkFlex button{
+    padding: .6em 1.5em;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: var(--offset-blue);
+    color: whitesmoke;
+}
+@media  (max-width: 850px){
+    .aboutPage{
+        display: flex;
+       flex-direction: column;
+        column-gap: 1em;
+        padding: .5em;
+    }
+    
+
+    .GalleryLinkFlex{
+        width: 100%;
+        padding: .8em;
+        gap: 2em;
+        
+    }
+    .GalleryLink{
+        padding: 1em;
+    }
+    .GalleryLinkFlex p{
+        font-size: 1em;
+    }
+
+    .GalleryLinkFlex button{
+        font-size: .8em;
+    
+    }
+.aboutText{
+    width: 90%;
+    padding-top: .2em;
+}
+.aboutMap{
+    padding: 1em;
+
+}
+.personalInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 8px;
+    
+    }
+    .fieldInput{
+       display: inline;
+       font-size: 1em
+    }
+    fieldset{
+       display: flex;
+       justify-content: space-evenly;
+    }
+
+    .consent p {
+       margin-left: 8px;
+       font-size: .8em;
+      
+      }
+      .consent{
+       margin-bottom: 0;
+       margin-top: 5px;
+      }
+
+      .contactOpt{
+       column-gap: .4em;
+    }
+    .contactOpt button{
+    border-radius: 7px;
+    padding: .1em .5em;
+    font-size: 1rem;
+    
+    
+    }
+}

@@ -1,0 +1,105 @@
+main{
+    background-color: white;
+}
+
+.coverImg {   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-block-size: 35vh;
+    color: white;
+ 
+ }
+ 
+ .overlay {
+    border-image: linear-gradient( rgba(15, 188, 245, 0), rgba(15, 188, 245, 0),
+    rgb(15, 187, 245,1)) fill 1;
+ }
+ .sectionTitle{
+    color: white;
+    margin-left: .4em;
+    font-size: 1.5em;
+ }
+ .heroContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1em;
+    min-height: 35vh;
+    justify-content: end;
+    row-gap: 0;
+    font-family: "Roboto", sans-serif;
+ }
+.heroContent h1{
+
+}
+ .contentWrap{
+    padding: 1em;
+ }
+ h3{
+    color: var(--light-blue);
+    font-size: 1.5rem;
+ }
+ h3 ul{
+    color: var(--nav-blue);
+    font-size: 1rem;
+ }
+ p{
+    font-size: 1.3rem;
+ }
+
+ .topSerives{
+    text-align: center;
+ }
+ .topSerives h2{
+    color: var(--light-blue);
+    font-size: 2rem;
+ }
+.list h3{
+    color: black;
+font-size: 1.2rem;
+}
+.contentWrap h2{
+   color: var(--light-blue);
+   font-size: 2rem;
+}
+
+
+.margin{
+   margin: 0;
+   padding: .1em;
+}
+
+/* Areas covered */ 
+.areaWrap ul{
+   display: flex;
+   width: 100%;
+   justify-content: space-around;
+   align-items: flex-start; 
+   gap: .1em;
+  
+}
+.listArea{
+   display: flex;
+   flex-direction: column;
+
+}
+.areaWrap p{
+text-align: center;
+}
+
+@media (max-width: 750px){
+   .areaWrap h1{
+      text-align: center;
+      
+   }
+   .heroContent {
+padding: .5em;
+
+   }
+   .heroContent h1{
+      margin-bottom: 0;
+      padding: 0;
+      text-align: center;
+   }
+}
